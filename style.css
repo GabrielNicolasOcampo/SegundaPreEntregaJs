@@ -1,0 +1,888 @@
+/* fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+
+    --black1: #1A1B1F;
+    --black2: #30353B;
+    --red: #e40a0a;
+    --white: #fff;
+}
+
+/* reset de css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* aca comienza grid */
+
+#grilla {
+
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 7vh 10vh 60vh 23vh;
+    grid-template-areas: "navegacion navegacion navegacion"
+        "productos productos  productos"
+        "servicios servicios  servicios"
+        "servicios servicios  servicios"
+        "pie_de_pagina pie_de_pagina  pie_de_pagina";
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+}
+
+#card {
+
+    width: 14%;
+    height: 90%;
+    overflow: hidden;
+
+}
+
+
+.contenedor-card {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: #1A1B1F;
+    grid-area: navegacion;
+
+}
+
+#productos {
+    background-color: #1A1B1F;
+    grid-area: productos;
+    height: 100%;
+    width: 100%;
+
+}
+
+#servicios {
+    background-color: #1A1B1F;
+    grid-area: servicios;
+
+}
+
+footer {
+    grid-area: pie_de_pagina;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    color: #fff;
+    background-color: #1A1B1F;
+
+}
+
+/* aca termina grid */
+
+.links {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.link {
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+    padding: 7px 10px;
+}
+
+.links {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.logo__name {
+    font-size: 24px;
+    color: white
+}
+
+.point {
+    color: black
+}
+
+hr {
+
+    color: #e40a0a;
+}
+
+
+/* aca comienza el navegador*/
+
+
+.nav__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.nav__nav {
+    width: 100%;
+    height: 100%
+}
+
+
+.nav__nav {
+    color: #fff;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+    height: 100%
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.titulo3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor_contacto {
+
+    display: flex;
+    padding: 5%;
+    width: 100%;
+}
+
+.logo {
+    padding: 25px;
+    text-align: center;
+}
+
+.hero__main {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    min-height: 70px;
+    height: auto;
+    padding: 30px 0;
+}
+
+.hero__textos {
+    width: 100%;
+    text-align: center;
+}
+
+/* aca termina el navegador navegador */
+
+/* esto es parte de clientes */
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+#contenedor_clientes {
+
+    padding: 5%;
+}
+
+/* aca empiezan los codigos del carrousell */
+
+.section_carousel {
+
+    padding: 4%;
+}
+
+.codigos_c {
+    color: #fafafa;
+}
+
+.codigos_parrafo {
+    color: white;
+}
+
+/* Proyectos empieza aca */
+
+.card {
+    width: 30%;
+    padding: 30px 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    border-radius: 10px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 60px;
+    box-shadow: 0 0 6px var(--color_shadow);
+}
+
+.card__img {
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.cards__text {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card__list {
+    color: var(--gold2);
+    font-weight: 700;
+    margin: 25px 0 12px;
+    font-size: 18px;
+}
+
+.ul_white {
+    color: white;
+}
+
+
+
+.card__title {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.card__copy {
+    color: var(--gray2);
+    margin-bottom: 16px;
+}
+
+.card__button {
+    display: block;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    text-decoration: none;
+    width: 100%;
+    color: var(--black1);
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.card__date {
+
+    color: white;
+}
+
+.container-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.background {
+    width: 68%;
+    height: 290px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.background__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.background__text {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 15px;
+    color: #fff;
+}
+
+.background__title {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.contenedor_proyectos {
+
+    padding: 5%;
+
+
+}
+
+
+/* aca termina proyectos */
+
+/* clientes empieza aca !! */
+
+
+
+.testimony-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimony__card {
+    width: 30%;
+    height: 500px;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.testimony__img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center top;
+
+}
+
+.testimony__copy {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow) var(--color_shadow);
+    padding: 15px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.testimony__copy--modifier {
+    background: none;
+    box-shadow: none;
+}
+
+.testimony__logo {
+    font-size: 40px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.testimony__name {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.testimony__position {
+    color: var(--gray);
+}
+
+.testimony__text {
+    padding: 40px 0;
+    width: 90%;
+    margin: 0 auto;
+    color: white
+}
+
+.google__logo {
+    margin-bottom: 20px;
+}
+
+
+.testimony__history {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+
+.testimony__info {
+    width: 70%;
+}
+
+.logo--picture {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center top;
+}
+
+.services {
+    background: #fafafa;
+}
+
+.subtitle {
+    font-size: 42px;
+    color: white;
+}
+
+.subtitle--modifier {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.copy__section {
+    color: white
+}
+
+.copy__section--modifier {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* clientes termina aca */
+
+/* check */
+
+.check {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.check__item {
+    width: 30%;
+    padding-right: 10px;
+    display: flex;
+    border-right: 2px solid var(--black2);
+}
+
+.bx-check {
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+
+/* en contacto.html esto son las letras 200 y proyectos exitosos */
+
+.check__number {
+    font-weight: 700;
+    color: white;
+}
+
+.check__copy {
+    font-weight: 300;
+    color: white;
+}
+
+.newsletter {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: auto;
+    font-family: inherit;
+    position: relative;
+    border-radius: 6px;
+}
+
+.newsletter--modifier {
+    margin: 0;
+    width: 80%;
+}
+
+.newsletter__input {
+    width: 100%;
+    height: 100%;
+    padding: 22px 10px;
+    outline: none;
+    font-family: inherit;
+    border-radius: 6px;
+    border: 1px solid var(--black1)
+}
+
+.newsletter__submit {
+    position: absolute;
+    right: 8px;
+    top: 10%;
+    height: 80%;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    color: #fff;
+    padding: 0 15px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.item__contact {
+    width: 25%;
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    color: white
+}
+
+.link {
+    width: 100%;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+
+}
+
+.item__ {
+    width: 25%;
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+
+}
+
+.contact__icon {
+    font-size: 14px;
+    color: white;
+    line-height: 20px;
+    margin-right: 4px;
+}
+
+.contact__icon--modifier {
+    color: white;
+}
+
+.contact__title {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* aca termina el footer */
+
+
+@media screen and (max-width:900px) {
+    .section_carousel {
+        width: auto;
+        height: auto;
+    }
+
+    #carouselExampleDark {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        height: 290px;
+    }
+
+    .contenedor_contacto {
+
+        display: flex;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+    }
+
+    .contenedor_proyectos {
+
+        display: flex;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+    }
+
+    #servicios {
+
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .nav__nav {
+
+        width: auto;
+        height: 30px;
+    }
+
+
+    #productos {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .cta {
+        padding: 15px 22px;
+    }
+
+    .container-cards {
+        justify-content: space-evenly;
+    }
+
+    .services .card {
+        width: 45%;
+    }
+
+    .background {
+        width: 52%;
+    }
+
+    .card {
+        width: 42%;
+    }
+
+    .testimony-container {
+        justify-content: space-evenly;
+    }
+
+    .testimony__card {
+        width: 45%;
+
+    }
+
+    .check__item {
+        width: 45%;
+        margin-bottom: 35px;
+    }
+
+    .newsletter {
+        width: 80%;
+    }
+
+    .download {
+        width: 100%;
+    }
+
+    .download__app {
+        justify-content: space-between;
+    }
+
+    .download__item {
+        width: 45%;
+    }
+
+    .get-email {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
+
+    main .container,
+    footer .container {
+        padding: 60px 0;
+    }
+
+    .testimony {
+
+        width: 100%;
+        height: 100%;
+        overflow: scroll
+    }
+
+    .testimony-container {
+
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
+    .nav__container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .nav__hero {
+        height: auto;
+    }
+
+    .logo {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .links {
+        padding-bottom: 10px;
+        text-align: center;
+        padding: 7px 10px;
+        text-decoration: none;
+    }
+
+
+    .hero__main {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        min-height: 70px;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .hero__textos {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mockup {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .copy {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .copy__section {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .services .card {
+        width: 80%;
+    }
+
+    .container-bg {
+        justify-content: space-evenly;
+    }
+
+    .card {
+        margin-bottom: 40px;
+        width: 65%;
+    }
+
+    .card__title {
+        font-size: 35px;
+    }
+
+    .card__button {
+        width: 100%;
+    }
+
+    .background {
+        width: 65%;
+        margin-bottom: 40px;
+    }
+
+    .background__copy {
+        display: none;
+    }
+
+    .testimony__card {
+        width: 65%;
+    }
+
+    .testimony__name {
+        font-size: 20px;
+    }
+
+    .container--modifier {
+        width: 80%;
+    }
+
+    .item__contact {
+        width: 100%;
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .section_carousel {
+        width: auto;
+        height: auto;
+    }
+
+    .services .card {
+        width: 95%;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .background {
+        width: 95%;
+    }
+
+    .testimony__card {
+        width: 95%;
+    }
+
+    .testimony__history {
+        font-size: 20px;
+    }
+
+    .container--modifier {
+        width: 90%;
+    }
+
+    .newsletter {
+        width: 100%;
+        display: none;
+    }
+
+    .newsletter--modifier {
+        display: block;
+    }
+
+    .check__item {
+        width: 100%;
+        border: none;
+        padding: none;
+        justify-content: center;
+    }
+
+    .download__item {
+        width: 49%;
+    }
+
+    .download__title {
+        font-size: 16px;
+    }
+
+    .download__logo {
+        font-size: 30px;
+    }
+}
